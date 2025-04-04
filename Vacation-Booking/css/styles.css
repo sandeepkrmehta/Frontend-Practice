@@ -250,71 +250,83 @@ body {
 
 
 
-/* Responsive Media Queries */
-@media(max-width: 577) {
-    .landing-page .flex-content {
-        /* padding: 10%; */
-        width: ;
-        text-align: center;
-        background-size: cover;
-        
+/* Tablet Devices */
+@media screen and (max-width: 1024px) {
+    .wrapper {
+        padding: 20px;
     }
-
-    .landing-page .vacations-heading{
-        font-size: 50px;
+    
+    .vacations-heading {
+        font-size: 2rem;
     }
-
-    .vacation-header .heading {
-        font-size: 50px;
-    }
-    .holiday-section {
-        padding: 10vw;
-    }
-
-    .holiday-heading {
-        font-size: clamp(30px, 5vw, 50px);
-    }
-
+    
     .main-nav a {
+        font-size: 1rem;
         padding: 10px;
     }
 
-    .gallery-section .gallery-wrapper {
-        max-width: 90%;
+    .place-div img,
+    .gallery-wrapper img {
+        width: 100%;
+        height: auto;
+    }
+
+    .package-card {
+        width: 100%;
     }
 }
 
-
-
-@media (min-width: 577px) and (max-width: 768px) {
-    .landing-page .flex-content {
-        /* padding: 10%; */
-        width: ;
-        text-align: center;
-        background-size: cover;
-        
-    }
-
-    .landing-page .vacations-heading{
-        font-size: 50px;
-    }
-
-    .vacation-header .heading {
-        font-size: 50px;
-    }
-    .holiday-section {
-        padding: 10vw;
-    }
-
-    .holiday-heading {
-        font-size: clamp(30px, 5vw, 50px);
-    }
-
-    .main-nav a {
+/* Mobile Devices */
+@media screen and (max-width: 768px) {
+    .wrapper {
         padding: 10px;
     }
 
-    .gallery-section .gallery-wrapper {
-        max-width: 90%;
+    .vacations-heading {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .main-nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .main-nav a {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .holiday-section,
+    .place-to-visit-section,
+    .gallery-section,
+    .packages-section {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .place-div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .place-div img,
+    .gallery-wrapper img {
+        width: 90%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .package-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .package-card {
+        width: 90%;
+        margin-bottom: 15px;
     }
 }
