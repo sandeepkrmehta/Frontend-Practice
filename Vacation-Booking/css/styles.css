@@ -277,7 +277,11 @@ body {
 }
 
 /* Mobile Devices */
-@media screen and (max-width: 768px) {
+@media (min-width: 400px) and (max-width: 768px) {
+    .landing-page .vacations-heading {
+        font-size: 50px;
+    }
+    
     .wrapper {
         padding: 10px;
     }
@@ -286,11 +290,32 @@ body {
         font-size: 1.5rem;
         text-align: center;
     }
+    .vacation-header .heading{
+        font-size: 30px;
+    }
 
+    .holiday-heading{
+        font-size: 40px;
+    }
+
+    .holiday-text{
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+
+    .gallery-section {
+        margin-top: -17px;
+    }
+
+    .packages-section {
+        margin-top: -37px;
+    }
     .main-nav {
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: center;
     }
 
     .main-nav a {
