@@ -277,7 +277,11 @@ body {
 }
 
 /* Mobile Devices */
-@media (min-width: 400px) and (max-width: 768px) {
+@media (min-width: 300px) and (max-width: 668px) {
+    .landing-page{
+        background-size: cover;
+    }
+    
     .landing-page .vacations-heading {
         font-size: 50px;
     }
