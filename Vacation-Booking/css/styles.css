@@ -251,7 +251,42 @@ body {
 
 
 /* Responsive Media Queries */
-@media (max-width: 768px) {
+@media(max-width: 577) {
+    .landing-page .flex-content {
+        /* padding: 10%; */
+        width: ;
+        text-align: center;
+        background-size: cover;
+        
+    }
+
+    .landing-page .vacations-heading{
+        font-size: 50px;
+    }
+
+    .vacation-header .heading {
+        font-size: 50px;
+    }
+    .holiday-section {
+        padding: 10vw;
+    }
+
+    .holiday-heading {
+        font-size: clamp(30px, 5vw, 50px);
+    }
+
+    .main-nav a {
+        padding: 10px;
+    }
+
+    .gallery-section .gallery-wrapper {
+        max-width: 90%;
+    }
+}
+
+
+
+@media (min-width: 577px) and (max-width: 768px) {
     .landing-page .flex-content {
         /* padding: 10%; */
         width: ;
